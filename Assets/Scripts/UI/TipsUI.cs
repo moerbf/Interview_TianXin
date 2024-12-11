@@ -21,6 +21,7 @@ public class TipsUI : UIBase
     public override void OnEnter()
     {
         base.OnEnter();
-        transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        transform.localScale = Vector3.zero;
+        transform.DOScale(1, 0.3f);
     }
 }
